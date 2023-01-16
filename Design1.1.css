@@ -127,7 +127,7 @@ a:hover::before {
     width: 100%; /* or any specific width */
     margin: 0 auto;
     display: block;
-    top: 22% ;
+    top: 18% ;
     
 
 }
@@ -157,6 +157,8 @@ body::after{
     .main{
         justify-content: center;
         text-align: center;
+        width:90%;
+        height: 92%;
 
     }
 
