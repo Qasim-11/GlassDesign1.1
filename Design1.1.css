@@ -162,7 +162,7 @@ a:hover::before {
     
 
 body::after{
-    clip-path: circle(30% at bottom );}
+    clip-path: circle(40% at bottom );}
  /* body .main h1.jj{
         width: 80%; /* or any specific width 
         display: block;
@@ -246,9 +246,9 @@ img {
 }
 .img{
     height: 0%;
-    width: 100%;
+    width: 105%;
     position: absolute;
-    bottom: 0%;
+    bottom: 3%;
 }
 .main .text{
     margin: 0 auto;
