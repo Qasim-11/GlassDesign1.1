@@ -1,3 +1,11 @@
+*::selection{
+    background-color: rgb(112, 174, 216);    
+
+    z-index: 10;
+    }
+
+
+
 p {
     -webkit-hyphens: auto; /* for chrome, safari */
     -moz-hyphens: auto; /* for firefox */
@@ -121,15 +129,16 @@ a:hover::before {
 
 
 }
-.con .img{
-    width: 40%;
+.con .img{    
+    z-index: 5;
+
 }
 .con .img img{
-    width :400px;
+     width: 70%;
+     margin-left: 50%;
+
 }
-*::selection{
-background-color: rgb(112, 174, 216);    
-}
+
 
 
 @media  (min-width: 1px) and (max-width: 800px){
@@ -141,6 +150,7 @@ background-color: rgb(112, 174, 216);
     top: 18% ;
     left: 0;
     right: 0;
+    z-index: 10;
     
 
 }
@@ -166,21 +176,31 @@ body::after{
 
     .con{
         width: 100%;
-        display: block;
+        display: flex;
         position: relative;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        min-height:100v ;
+overflow: hidden;
     }
     .main{
         justify-content: center;
         text-align: center;
         width: 92%;
         height: 100%;
+        overflow: visible;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+        min-height:100v ;
+        overflow-y: scroll;
 
     }
 
     .con .text p {
         position: absolute;
         width: 80%;
-        top :40%;
+        top :45%;
         text-align: center;
         left: 0;
         right: 0;
@@ -188,7 +208,7 @@ body::after{
         margin: 0 auto;
         text-transform: uppercase;
         line-height: 2;
-        font-size: 18px;
+        font-size: 14px;
 
 
         
@@ -202,19 +222,33 @@ body::after{
         left: 0;
         margin: 0  auto;
         text-align: center;
+        height: 444;
         
 
 }
 
 img {
     position: absolute;
-    bottom:0;
+    bottom: 20%;
+ 
     left: 0;
     right: 0;
     margin: 0 auto;
     z-index: 1;
 
 
+}
+.con .img img{
+    width: 70%;
+    margin:0 auto
+    
+
+}
+.img{
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
 }
 .main .text{
     margin: 0 auto;
@@ -245,8 +279,16 @@ text-align: center;
 display: flex;
 align-items: center;
 justify-content: center;
+pointer-events: all;
+z-index: 10;
 
 
 }
+body{
+    min-height: 100%;
+
+
+}
+
 
 }
