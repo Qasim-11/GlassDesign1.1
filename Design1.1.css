@@ -141,7 +141,7 @@ a:hover::before {
 
 
 
-@media  (min-width: 1px) and (max-width: 800px){
+@media  (min-width: 1px) and (max-width: 600px){
 
  .navbar{
     width: 100%; /* or any specific width */
@@ -192,8 +192,7 @@ overflow: hidden;
         flex-direction: column;
         flex-wrap: wrap;
         flex-flow: column;
-        min-height:100v ;
-        overflow-y: scroll;
+        min-height:100vh ;
 
     }
 
@@ -222,7 +221,7 @@ overflow: hidden;
         left: 0;
         right: 0;
         margin: 0  auto;
-        text-align: center;
+        text-align: left;
         height: 444;
         
 
@@ -246,7 +245,7 @@ img {
 
 }
 .img{
-    height: 200px;
+    height: 0%;
     width: 100%;
     position: absolute;
     bottom: 0%;
@@ -283,10 +282,17 @@ justify-content: center;
 pointer-events: all;
 z-index: 10;
 
+
 }
-body
-{
+body{
     min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+
 }
-ul{padding: 0;}
+
+ul{
+    padding-left:0 ;
+}
 }
