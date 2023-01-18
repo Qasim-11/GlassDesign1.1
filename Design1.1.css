@@ -240,6 +240,7 @@ img {
 }
 .con .img img{
     width: 80%;
+    max-width: 392;
     margin:0 auto
     
 
