@@ -282,13 +282,10 @@ justify-content: center;
 pointer-events: all;
 z-index: 10;
 
-
 }
-body{
+body
+{
     min-height: 100%;
-
-
 }
-
 
 }
