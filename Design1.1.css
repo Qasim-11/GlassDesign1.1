@@ -46,7 +46,7 @@ body::after{
     text-align: center;
     margin: 0;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 
 }
 h1{
@@ -65,7 +65,9 @@ h1{
     display: flex; /* enable flexbox layout */
     position: absolute;
     right: 5%;
-    top: 10%;
+    top: 7%;
+    z-index: 10000;
+    
  }
   
   .navbar a {
@@ -76,6 +78,8 @@ h1{
     font-size: 20px;
     position: relative;
     text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
   }
 
   .navbar a:hover{
@@ -134,14 +138,16 @@ a:hover::before {
 
 }
 .con .img img{
-     width: 65%;
+     width: 70%;
+     min-width: 300px;
      margin-left: 50%;
+     margin-top: 10%;
 
 }
 
 
 
-@media  (min-width: 1px) and (max-width: 600px){
+@media  (min-width: 1px) and (max-width: 900px){
 
  .navbar{
     width: 100%; /* or any specific width */
@@ -162,7 +168,9 @@ a:hover::before {
     
 
 body::after{
-    clip-path: circle(40% at bottom );}
+    clip-path: circle(40% at bottom );
+}
+    
  /* body .main h1.jj{
         width: 80%; /* or any specific width 
         display: block;
@@ -230,6 +238,7 @@ overflow: hidden;
 img {
     position: absolute;
     bottom: 20%;
+
  
     left: 0;
     right: 0;
@@ -241,7 +250,8 @@ img {
 .con .img img{
     width: 80%;
     max-width: 392;
-    margin:0 auto
+    margin:0 auto;
+    min-width: none;
     
 
 }
