@@ -1,7 +1,8 @@
 
-* {
-    animation: reverse-fade 0.6s ease-in-out;
+h1,p,h2,a,body {
+    animation: reverse-fade 1.2s ease-in-out;
   }
+
   
   @keyframes reverse-fade {
     0% {
@@ -45,7 +46,6 @@ body::after{
     background: linear-gradient(to left, rgba(255, 255, 255, 0.884), rgba(255, 255, 255, 0.329) );
     clip-path: circle(36% at right  70%);
     position: absolute; 
-
     
     
 }
@@ -151,6 +151,7 @@ img{
      margin-left: 50%;
      margin-top: 10%;
     z-index: 5;
+    position: relative;
 }
 
 
