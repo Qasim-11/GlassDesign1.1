@@ -27,40 +27,7 @@ p {
 }
 
 
-body{
-    font-family: 'Noto Sans KR', sans-serif;
-    display:flex;
-    justify-content: center ;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background:linear-gradient(#111, #222);
 
-    
-}
-body::after{
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.884), rgba(255, 255, 255, 0.329) );
-    clip-path: circle(36% at right  70%);
-    position: absolute; 
-    
-    
-}
-.main{
-    background: rgb(255, 255, 255,0.1) ;
-    width: 80%;
-    height: 80%;
-    display: flex;
-    border-radius: 35px;
-    text-align: center;
-    margin: 0;
-    position: relative;
-    overflow: visible;
-
-}
 h1{
     color: #FFFDFA;
     font-size:34px;
@@ -256,11 +223,11 @@ img {
 
 
 }
-.con .img img{
-    width: 80%;
-    max-width: 392;
+img{
+    height: 80%;
     margin:0 auto;
     min-width: none;
+    margin-top: 333px;
     
 
 }

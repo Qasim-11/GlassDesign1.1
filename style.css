@@ -1,0 +1,122 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    display:flex;
+    justify-content: center ;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background:linear-gradient(#111, #222);
+color: aliceblue;
+    
+
+
+}
+ul{
+    padding: 0;
+}
+body::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.884), rgba(255, 255, 255, 0.329) );
+    clip-path: circle(36% at right  70%);
+    position: absolute; 
+    
+    
+}
+.main{
+    background: rgb(255, 255, 255,0.1) ;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 30% 70%;
+
+}
+
+
+img{
+height: 100%;
+    z-index: 100;
+    position: relative;
+    bottom: 10%;
+}
+.img{
+    display: flex;
+    justify-content: flex-end;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+
+}
+div{
+    height: 100%;
+}
+
+
+@media  (min-width: 1px) and (max-width: 900px){
+
+
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        text-align: center;
+        flex: 0 0 15%;
+    }
+    .navbar{
+        flex: 0 0 10%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .text{
+        flex: 0 0 20%;
+        text-align: center;
+    }
+
+    .img{
+align-items: baseline;
+justify-content: center;
+    }
+
+
+
+img{
+    height: 50%;
+    position: relative;
+    top: 4%;
+}
+
+
+
+
+
+
+    body::after{
+        clip-path: circle(40% at bottom );
+    }
+}
+
+/* 
+
+To do :
+
+create a border radius to the .main container
+
+
+make the nav bar links seperated
+
+make a hover effect to the <a>
+
+fix the typography
+
+قول الحمدلله
+
+*/
